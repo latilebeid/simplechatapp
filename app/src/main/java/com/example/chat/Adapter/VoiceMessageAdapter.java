@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 import java.io.IOException;
 import java.util.List;
-import com.bumptech.glide.Glide;
+//import com.bumptech.glide.Glide;
 public class VoiceMessageAdapter extends RecyclerView.Adapter<VoiceMessageAdapter.ViewHolder> {
 
     private Context mContext;
@@ -82,7 +82,7 @@ public class VoiceMessageAdapter extends RecyclerView.Adapter<VoiceMessageAdapte
         if (imageurl.equals("default")) {
             holder.profile_imageview.setImageResource(R.mipmap.ic_launcher);
         } else {
-            Glide.with(mContext).load(imageurl).into(holder.profile_imageview);
+          //  Glide.with(mContext).load(imageurl).into(holder.profile_imageview);
         }
     }
 
@@ -100,7 +100,7 @@ public class VoiceMessageAdapter extends RecyclerView.Adapter<VoiceMessageAdapte
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            play_Voice = itemView.findViewById(R.id.play_Button);
+         //   play_Voice = itemView.findViewById(R.id.play_Button);
             profile_imageview = itemView.findViewById(R.id.profile_image);
         }
     }
